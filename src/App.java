@@ -163,7 +163,7 @@ public class App extends Application {
         successAlert.setTitle("Berhasil");
         successAlert.setHeaderText("Berhasil menyimpan");
         successAlert.setContentText(student.getName()
-            + " telah disimpan dalam sistem.\n Klik tombol Daftar Mahasiswa untuk melihat seluruh data.");
+            + " telah disimpan dalam sistem.\nKlik tombol Daftar Mahasiswa untuk melihat seluruh data.");
         successAlert.showAndWait();
         resetFields();
         return;
