@@ -13,8 +13,8 @@ public class App extends Application {
   public void start(Stage stage) {
     countGradeButton = new Button("Hitung Nilai");
     countGradeButton.setOnAction(e -> {
-      CountingGradeForm createPatientsForm = new CountingGradeForm();
-      createPatientsForm.start(new Stage());
+      CountingGradeForm countingGradeForm = new CountingGradeForm();
+      countingGradeForm.start(new Stage());
     });
 
     exitButton = new Button("Keluar");

@@ -171,6 +171,13 @@ public class CountingGradeForm extends Application {
       }
     });
 
+    Button viewTableButton = new Button("Daftar Mahasiswa");
+    viewTableButton.setOnAction(e -> {
+
+      StudentTableView studentTableView = new StudentTableView();
+      studentTableView.start(new Stage());
+    });
+
     // create form layout
     GridPane gridPane = new GridPane();
     gridPane.setPadding(new Insets(10, 10, 10, 10));
@@ -205,7 +212,7 @@ public class CountingGradeForm extends Application {
     saveButton.setPrefWidth(80);
     resetButton.setPrefWidth(80);
     submitButton.setPrefWidth(80);
-    actions.getChildren().addAll(saveButton, resetButton, submitButton);
+    actions.getChildren().addAll(saveButton, resetButton, submitButton, viewTableButton);
     actions.setSpacing(10);
     actions.setAlignment(Pos.CENTER);
 
